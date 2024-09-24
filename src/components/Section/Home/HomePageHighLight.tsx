@@ -17,6 +17,7 @@ export default function HomePageHighLight() {
             imgSrc="https://www.outdoorkeeda.com/explore-the-sky/images/outdoorkeeda-bungee-jumping-2.jpg"
             title="Bungee Jumping"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            link="#"
           />
         </div>
         <div className="flex justify-center items-center">
@@ -25,6 +26,7 @@ export default function HomePageHighLight() {
             imgSrc="https://aquaterra.in/wp-content/uploads/2019/10/Brahmaputra-River-Rafting-Assam-31.jpg"
             title="River Rafting"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            link="#"
           />
         </div>
         <div className="sm:max-lg:col-span-2 flex justify-center items-center">
@@ -33,6 +35,7 @@ export default function HomePageHighLight() {
             imgSrc="https://cdnp.flypgs.com/files/Ekstrem_Sporlar/skydiving-nedir.jpg"
             title="Sky Diving"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            link="#"
           />
         </div>
       </div>

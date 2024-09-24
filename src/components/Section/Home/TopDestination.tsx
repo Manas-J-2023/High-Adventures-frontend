@@ -59,6 +59,7 @@ export default function TopDestination() {
                     title={hotel.title}
                     description={hotel.description}
                     rating={hotel.rating}
+                    link="#"
                 />
             ))
         }

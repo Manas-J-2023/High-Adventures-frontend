@@ -51,6 +51,7 @@ export default function TopHotelSection() {
                             imgSrc={hotel.imgSrc}
                             title={hotel.title}
                             description={hotel.description}
+                            link="#"
                         />
                     ))
                 }

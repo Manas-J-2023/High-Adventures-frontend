@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function HomePageBanner() {
     return (
@@ -18,7 +19,7 @@ export default function HomePageBanner() {
                         <h1 className="text-3xl font-extrabold text-white sm:text-5xl">
                             Let us find your
 
-                            <strong className="block font-extrabold text-rose-500"> Forever Home. </strong>
+                            <strong className="block font-extrabold text-green-500"> Forever Home. </strong>
                         </h1>
 
                         <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
@@ -26,19 +27,18 @@ export default function HomePageBanner() {
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
-                            <a
-                                href="#"
-                                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                            <Link
+                                href={"/search"}
+                                className="block w-full rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                             >
                                 Get Started
-                            </a>
+                            </Link>
 
-                            <a
-                                href="#"
-                                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                            <Link href="/about"
+                                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-green-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                             >
                                 Learn More
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
