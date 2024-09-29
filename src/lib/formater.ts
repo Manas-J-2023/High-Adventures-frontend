@@ -9,7 +9,10 @@ export function PriceFormat(price:number, currency:string = 'INR') {
 }
     
 export function NumberCompactFormat(number:number) {
-    let formatter = new Intl.NumberFormat('en", { notation: "compact" }');
+    let formatter = new Intl.NumberFormat('en-IN', {
+        notation: 'compact',
+        compactDisplay: 'short',
+    });
     return formatter.format(number);
 }
 
