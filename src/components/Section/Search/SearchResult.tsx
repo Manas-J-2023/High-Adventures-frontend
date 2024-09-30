@@ -14,7 +14,7 @@ const TopHotelList: CardImgDiscriptionProps[] = [
         shortLocation : "Goa",
         distance : "2.5 km",
         amenities : ["Free Wifi", "Free Parking", "Swimming Pool", "Spa", "Restaurant"],
-        bookingLink : "#"
+        bookingLink : "green-palms-hotel"
     },
     {
         title: "Blue Waves Resort",
@@ -28,7 +28,7 @@ const TopHotelList: CardImgDiscriptionProps[] = [
         shortLocation : "Kerala",
         distance : "3.5 km",
         amenities : ["Free Wifi", "Free Parking", "Swimming Pool", "Spa", "Restaurant"],
-        bookingLink : "#"
+        bookingLink : "blue-waves-resort"
     },
     {
         title: "Red Rose Hotel",
@@ -42,7 +42,7 @@ const TopHotelList: CardImgDiscriptionProps[] = [
         shortLocation : "Jaipur",
         distance : "1.5 km",
         amenities : ["Free Wifi", "Free Parking", "Swimming Pool", "Spa", "Restaurant"],
-        bookingLink : "#"
+        bookingLink : "red-rose-hotel"
     },
     {
         title: "Yellow Sun Resort",
@@ -56,7 +56,7 @@ const TopHotelList: CardImgDiscriptionProps[] = [
         shortLocation : "Varanasi",
         distance : "4.5 km",
         amenities : ["Free Wifi", "Free Parking", "Swimming Pool", "Spa", "Restaurant"],
-        bookingLink : "#"
+        bookingLink : "/yellow-sun-resort"
     },
     {
         title: "Purple Orchid Hotel",
@@ -70,6 +70,7 @@ const TopHotelList: CardImgDiscriptionProps[] = [
         shortLocation : "Goa",
         distance : "2.5 km",
         amenities : ["Free Wifi", "Free Parking", "Swimming Pool", "Spa", "Restaurant"],
+        bookingLink : "/purple-orchid-hotel"
     }]
 
 export default function SearchResult() {

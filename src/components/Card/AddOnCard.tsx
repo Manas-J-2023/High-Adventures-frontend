@@ -4,12 +4,15 @@ import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 import { PriceFormat, PercentageFormat } from "@/lib/formater";
 import { Button } from "@nextui-org/react";
 import { FaPlus } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 
 export interface AddOnCardProps {
   title: string;
   image: string;
   offerPrice: number;
   originalPrice: number;
+  isAdded?: boolean;
   onClickAction?: () => void;
 }
 
@@ -18,6 +21,7 @@ export default function AddOnCard({
   image,
   offerPrice,
   originalPrice,
+  isAdded,
   onClickAction,
 }: AddOnCardProps) {
   return (
@@ -49,7 +53,7 @@ export default function AddOnCard({
                 </span>
 
                 <span className="text-sm">
-                 {"+"} {PriceFormat(offerPrice) || "₹ 1000"}
+                  {PriceFormat(offerPrice) || "₹ 1000"}
                 </span>
               </div>
               <div className="flex items-center rounded-md px-2 text-gray-800">
@@ -68,10 +72,15 @@ export default function AddOnCard({
             radius="full"
             fullWidth
             onClick={onClickAction}
-            className="mt-2 bg-green-800 text-white"
+            className={cn(
+              "text-white",
+              isAdded
+                ? "bg-red-700 hover:bg-red-800"
+                : "bg-green-700 hover:bg-green-800"
+            )}
           >
-            <span className="sr-only">Add</span>
-            <FaPlus />
+            <span className="sr-only">{isAdded ? "Added" : "Add"}</span>
+            {!isAdded ? <FaPlus /> : <FaTrash />}
           </Button>
         </div>
       </CardContent>

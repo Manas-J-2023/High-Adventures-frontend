@@ -40,8 +40,9 @@ export default function ListingReviewSection({
               ))}
             </span>
             <span className="text-lg text-gray-800">
-              <span className="font-bold text-green-800">{rating}</span> out of
-              5
+              <span className="font-bold text-green-800">{rating.toFixed(1)}</span>
+              {" "}
+              out of 5
             </span>
             <span className="text-sm text-gray-800">
               based on {NumberCompactFormat(reviewsCount)} reviews

@@ -11,6 +11,8 @@ import AddOnCard from "./Card/AddOnCard";
 import IndividualListingSection from "./Section/Listing/IndividualListingSection";
 import ListingReviewSection from "./Section/Review/ListingReviewSection";
 import ReviewCard from "./Card/ReviewCard";
+import BookingSection from "./Section/Booking/BookingSection";
+import HotelPanel from "./Section/Pannel/HotelPanel";
 
 export {
   Header,
@@ -26,4 +28,6 @@ export {
   IndividualListingSection,
   ListingReviewSection,
   ReviewCard,
+  BookingSection,
+  HotelPanel,
 };
