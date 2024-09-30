@@ -1,7 +1,9 @@
+import { AdminPanel } from "@/components/Section/Pannel/AdminPanel";
+
 export default function Page() {
   return (
     <div>
-      <h1>Page</h1>
+      <AdminPanel/>
     </div>
   );
 }
