@@ -31,7 +31,7 @@ interface IndividualListingSectionProps {
   }[];
 }
 
-export default function IndividualListingSection({
+export default function         IndividualListingSection({
   title,
   description,
   keyWords,

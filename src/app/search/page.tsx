@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export default function SearchPageBanner() {
   return (
-    <>
+    <div>
       <section className="flex h-[calc(100vh-16rem)] items-center justify-center bg-white/20 bg-cover bg-center bg-no-repeat p-4 md:p-8">
         <div className="relative h-[95%] w-full overflow-hidden rounded-2xl bg-[url(https://img.freepik.com/free-photo/aokigahara-forest-highly-detailed-style_23-2151570309.jpg?t=st=1725194626~exp=1725198226~hmac=e6c39e60484b2d40e85d377c8782f89d5173252060d05213be34c9463c2831d8&w=1380)] bg-cover bg-center bg-no-repeat shadow-lg max-md:flex max-md:items-center max-md:justify-center">
           <div className="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
@@ -103,7 +103,7 @@ export default function SearchPageBanner() {
         </div>
         <SearchResult />
       </section>
-    </>
+    </div>  
   );
 }
 

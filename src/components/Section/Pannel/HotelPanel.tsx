@@ -1,5 +1,5 @@
 "use client";
-import { Upload } from "lucide-react";
+import { Hotel, Upload } from "lucide-react";
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "next/image";
 import { MdDelete } from "react-icons/md";
@@ -35,7 +35,7 @@ import {
 import pincodes from "indian-pincodes";
 
 const ShopProfileSchema = z.object({
-  shopName: z
+    title: z
     .string()
     .min(3, "Shop name must be at least 3 characters long")
     .max(50, "Shop name must be at most 50 characters long"),
@@ -200,23 +200,23 @@ const HotelPanel = () => {
                   <div className="grid auto-rows-max items-start gap-4 lg:col-span-2 lg:gap-8">
                     <Card x-chunk="dashboard-07-chunk-0">
                       <CardHeader>
-                        <CardTitle>My Shop</CardTitle>
-                        {/* <CardDescription>
-                        Lipsum dolor sit amet, consectetur adipiscing elit
-                    </CardDescription> */}
+                        <CardTitle>My Hotel</CardTitle>
+                        <CardDescription>
+                            Update your hotel details and images here.
+                    </CardDescription>
                       </CardHeader>
                       <CardContent>
                         <div className="grid gap-6">
                           <div className="grid gap-3">
                             <FormField
                               control={form.control}
-                              name="shopName"
+                              name="HotelName"
                               render={({ field }) => (
                                 <FormItem>
                                   <FormLabel>Shop Name</FormLabel>
                                   <FormControl>
                                     <Input
-                                      placeholder="Shop Name"
+                                      placeholder="Hotel Name"
                                       {...field}
                                       disabled={disabled}
                                     />
